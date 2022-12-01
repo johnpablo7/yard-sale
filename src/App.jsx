@@ -1,5 +1,17 @@
-function App() {
-  return <div className="bg-red-400 font-Quicksand text-2xl">Hola Mundo</div>;
-}
+import { BrowserRouter, useRoutes } from "react-router-dom";
+import { routes } from "./routes/routes";
 
-export default App;
+const Router = () => {
+  const elements = useRoutes(routes);
+  return elements;
+};
+
+export const App = () => {
+  return (
+    <>
+      <BrowserRouter>
+        <Router />
+      </BrowserRouter>
+    </>
+  );
+};
