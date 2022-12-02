@@ -2,10 +2,6 @@
 module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    fontFamily: {
-      Quicksand: ["Quicksand", "sans-serif"],
-      Roboto: ["Roboto", "sans-serif"],
-    },
     extend: {
       colors: {
         app: {
