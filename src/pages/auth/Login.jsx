@@ -1,11 +1,15 @@
 import { useState } from "react";
 import { RiEyeLine, RiEyeOffLine, RiLockLine } from "react-icons/ri";
+import { toast } from "react-toastify";
 // import { RiMailLine } from "react-icons/ri";
 import logoYard from "../../../public/assets/logos/logo_yard_sale.svg";
 
 export const Login = () => {
   const [showPasswordFirst, setShowPasswordFirst] = useState(false);
   const [showPasswordSecond, setShowPasswordSecond] = useState(false);
+  // const [email, setEmail] = useState("");
+  const [passwordFirst, setPasswordFirst] = useState("");
+  const [passwordSecond, setPasswordSecond] = useState("");
 
   const handleShowPasswordFirst = () => {
     setShowPasswordFirst(!showPasswordFirst);
@@ -14,10 +18,35 @@ export const Login = () => {
     setShowPasswordSecond(!showPasswordSecond);
   };
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // console.log(password); // ,email)
+
+    if ([passwordFirst, passwordSecond].includes("")) {
+      toast.error("Todos los campos son obligatorios", {
+        theme: "dark",
+      });
+      return;
+    }
+
+    if (passwordFirst.length < 6 || passwordSecond.length < 6) {
+      toast.warning("El password debe contener al menos 6 caracteres", {
+        theme: "dark",
+      });
+      return;
+    }
+
+    console.log("Toda la funcionalidad de login");
+  };
+
   return (
     // Aqui va un p-5 que lo tiene el AuthLayout para todos los formularios o paginas.
     <div className="md:w-96 w-full">
-      <img src={logoYard} alt="logo_yard_sale" className="mx-auto w-36" />
+      <img
+        src={logoYard}
+        alt="logo_yard_sale"
+        className="mx-auto w-36 lg:hidden"
+      />
       <h1 className="text-lg font-bold text-center mt-16">
         Create a new password
       </h1>
@@ -25,15 +54,21 @@ export const Login = () => {
         Enter a new password for your account
       </p>
 
-      <form className="flex flex-col">
+      <form onSubmit={handleSubmit} className="flex flex-col">
         <label className="text-sm font-bold mb-1 mt-10">Password</label>
         <div className="relative mb-6">
           <RiLockLine className="absolute left-2 top-1/2 -translate-y-1/2 text-gray-500" />
+          {/* Si Tuvieramos el e-mail aqui abajo pondriamos el value y el onChange */}
           <input
             type={showPasswordFirst ? "text" : "password"}
             className="bg-app-alabaster w-full rounded-lg py-2 px-8 outline-none border border-gray-200"
             placeholder="************"
+            value={passwordSecond}
+            onChange={(e) => setPasswordSecond(e.target.value)}
+            // value={email}
+            // onChange={(e) => setEmail(e.target.value)}
           />
+
           {showPasswordFirst ? (
             <RiEyeOffLine
               onClick={handleShowPasswordFirst}
@@ -53,6 +88,8 @@ export const Login = () => {
             type={showPasswordSecond ? "text" : "password"}
             className="bg-app-alabaster w-full rounded-lg py-2 px-8 outline-none border border-gray-200"
             placeholder="************"
+            value={passwordFirst}
+            onChange={(e) => setPasswordFirst(e.target.value)}
           />
           {showPasswordSecond ? (
             <RiEyeOffLine
