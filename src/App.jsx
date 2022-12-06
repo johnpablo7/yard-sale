@@ -4,9 +4,9 @@ import { AuthLayout } from "./layouts/auth/AuthLayout";
 
 // Pages
 import { Error404 } from "./pages/404";
-import { ChangePassword } from "./pages/auth/ChangePassword";
-import { ForgetPassword } from "./pages/auth/forgetPassword";
 import { Login } from "./pages/auth/Login";
+import { NewPassword } from "./pages/auth/NewPassword";
+import { RecoveryPassword } from "./pages/auth/RecoveryPassword";
 import { Register } from "./pages/auth/Register";
 
 export const App = () => {
@@ -16,10 +16,10 @@ export const App = () => {
         <Route path="/" element={<AuthLayout />}>
           <Route index element={<Login />} />
           <Route path="registro" element={<Register />} />
-          <Route path="olvide-password" element={<ForgetPassword />} />
+          <Route path="nuevo-password" element={<NewPassword />} />
           <Route
-            path="restablecer-password/:token"
-            element={<ChangePassword />}
+            path="recuperacion-password/:slug"
+            element={<RecoveryPassword />}
           />
         </Route>
         <Route path="*" element={<Error404 />} />
