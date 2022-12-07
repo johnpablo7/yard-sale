@@ -9,6 +9,7 @@ module.exports = {
           black: "#000000",
           dark: "#232830",
           silver: "#C7C7C7",
+          boulder: "#797979",
           alabaster: "#F7F7F7",
           green: "#ACD9B2",
         },

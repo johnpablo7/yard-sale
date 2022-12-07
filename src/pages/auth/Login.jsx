@@ -55,7 +55,7 @@ export const Login = () => {
           <input
             type="email"
             className="bg-app-alabaster w-full rounded-lg py-2 px-8 outline-none border border-gray-200"
-            placeholder="Username"
+            placeholder="username@gmail.com"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
@@ -84,8 +84,8 @@ export const Login = () => {
         </div>
         <div>
           {/* <button className="bg-app-green text-white w-full rounded-lg py-2 my-7 hover:scale-105 transition-all"> */}
-          <button className="bg-app-green text-white w-full rounded-lg py-4 my-4 hover:bg-green-700 transition-colors">
-            Log in
+          <button className="bg-app-green text-white w-full rounded-lg py-4 my-4 hover:bg-green-700 transition-colors font-bold">
+            <Link to="registro">Log in</Link>
           </button>
         </div>
       </form>
@@ -93,7 +93,7 @@ export const Login = () => {
         <Link to="recuperacion-password/:slug">Forgot my password</Link>
       </div>
       <div>
-        <button className=" text-app-green w-full rounded-lg py-4 hover:bg-green-700 hover:text-app-white transition-colors outline-none border border-app-green">
+        <button className=" text-app-green w-full rounded-lg py-4 hover:bg-green-700 hover:text-app-white transition-colors outline-none border border-app-green font-bold">
           <Link to="registro">Sign up</Link>
         </button>
       </div>

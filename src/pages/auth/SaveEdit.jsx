@@ -3,7 +3,7 @@ import { RiEyeLine, RiEyeOffLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
 
-export const Register = () => {
+export const SaveEdit = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -81,7 +81,7 @@ export const Register = () => {
         </div>
         <div>
           <button className="bg-app-green text-white w-full rounded-lg py-4 mt-36 hover:bg-green-700 transition-colors font-bold">
-            <Link to="registro">Create account</Link>
+            <Link to="registro">Save</Link>
           </button>
         </div>
       </form>
