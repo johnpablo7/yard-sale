@@ -30,6 +30,6 @@ npm run dev
 
 ## 📱 En movil
 
-![Captura de pantalla 2022-11-30 155909](https://user-images.githubusercontent.com/80083262/204907386-939bb6f4-a8c2-4bc9-8e7b-1b024c6a9c08.jpg)
+[![Captura-de-pantalla-2022-12-09-123254.jpg](https://i.postimg.cc/FsHH7Qd6/Captura-de-pantalla-2022-12-09-123254.jpg)](https://postimg.cc/HjFghRt0)
 
-<img width="386" alt="Captura de Pantalla 2022-10-08 a la(s) 10 48 37" src="https://user-images.githubusercontent.com/50961956/194718545-a4edbb8a-36bc-4a89-b4e3-832d1260b802.png">
+<img src="https://i.postimg.cc/FsHH7Qd6/Captura-de-pantalla-2022-12-09-123254.jpg" width="386">
