@@ -32,7 +32,7 @@ export const EditAccount = () => {
         </div>
         <div>
           <button className=" text-app-green w-full rounded-lg mt-36 py-4 hover:bg-green-700 hover:text-app-white transition-colors outline-none border border-app-green font-bold">
-            <Link to="registro">Edit</Link>
+            <Link to="/registro">Edit</Link>
           </button>
         </div>
       </form>

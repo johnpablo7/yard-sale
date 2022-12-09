@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import { RiMailLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
 import logoYard from "../../../public/assets/logos/logo_yard_sale.svg";
@@ -12,13 +12,19 @@ export const RecoveryPassword = () => {
     // console.log(password, email);
 
     if ([email].includes("")) {
-      toast.error("Todos los campos son obligatorios", {
+      toast.error("El email es obligatorio", {
         theme: "dark",
       });
       return;
     }
 
-    console.log("Toda la funcionalidad de recovery-password");
+    // VERIFICAR QUE EL EMAIL EXISTA
+    // ENVIAR EMAIL DE RECUPERACIÓN DE CONTRASEÑA
+    console.log("Toda la funcionalidad de recuperar password");
+
+    toast.success("Se han enviado las instrucciones a tu email", {
+      theme: "dark",
+    });
   };
 
   return (
@@ -29,32 +35,35 @@ export const RecoveryPassword = () => {
         alt="logo_yard_sale"
         className="mx-auto w-36 lg:hidden"
       />
-      <h1 className="text-lg font-bold text-center mt-20">Password recovery</h1>
-      <p className="text-lg text-app-boulder leading-5 mt-2 text-center">
-        Inform the email address used to create your account
+      <h1 className="text-lg font-bold text-center mt-20">
+        ¿Tienes problemas para iniciar sesión?
+      </h1>
+      <p className="text-lg text-app-boulder leading-5 mt-2 text-center mb-6">
+        Ingresa tu correo electrónico, teléfono o nopmbre de usuario y te
+        enviaremos un enlace para que recuperes el acceso a tu cuenta.
       </p>
 
       <form onSubmit={handleSubmit} className="flex flex-col">
-        <label className="text-sm font-bold mb-1 mt-7">Email address</label>
         <div className="relative mb-6">
+          <RiMailLine className="absolute left-2 top-1/2 -translate-y-1/2 text-gray-500" />
           <input
             type="email"
-            className="bg-app-alabaster w-full rounded-lg py-2 px-2 outline-none border border-gray-200"
-            placeholder="username@gmail.com"
+            className="bg-app-alabaster w-full rounded-lg py-2 px-8 outline-none border border-gray-200"
+            placeholder="Correo electrónico"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
         </div>
-
         <div>
-          {/* <button className="bg-app-green text-white w-full rounded-lg py-2 my-7 hover:scale-105 transition-all"> */}
-          <button className="bg-app-green text-white w-full rounded-lg py-4 mb-7 hover:bg-green-700 transition-colors">
-            <Link to="recuperacion-password-email/:slug">Submit</Link>
+          <button className="bg-app-green text-white w-full rounded-lg py-4 mb-7 hover:bg-green-700 transition-colors font-bold">
+            <Link to="/recuperacion-password-email/:slug">
+              Enviar enlace de inicio de sesión
+            </Link>
           </button>
         </div>
       </form>
       <div className="text-app-green text-center text-sm">
-        <Link to="/">Back to log in</Link>
+        <Link to="/">Volver al inicio de sesión</Link>
       </div>
     </div>
   );

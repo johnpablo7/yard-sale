@@ -1,3 +1,5 @@
+## Prototipo de auth para frontend con validaciones, React JS y Tailwind CSS
+
 ## 🚀 Como ejecutarlo en local
 
 Necesitarás tener instalado `node.js` a partir de la versión 14 y tener acceso a una terminal para seguir los siguientes pasos:

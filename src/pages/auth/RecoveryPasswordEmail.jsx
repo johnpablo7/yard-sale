@@ -12,10 +12,11 @@ export const RecoveryPasswordEmail = () => {
         className="mx-auto w-36 lg:hidden"
       />
       <h1 className="text-lg font-bold text-center mt-20">
-        Email has been sent!
+        ¡E-mail ha sido enviado!
       </h1>
       <p className="text-lg text-app-boulder leading-5 mt-2 text-center">
-        Please check your inbox for instructions on how to reset the password
+        Consulte su bandeja de entrada para obtener instrucciones sobre cómo
+        restablecer la contraseña.
       </p>
 
       <div className="rounded-full bg-app-alabaster w-36 py-10 my-8">
@@ -23,16 +24,16 @@ export const RecoveryPasswordEmail = () => {
       </div>
 
       <button className="bg-app-green text-white w-full rounded-lg py-4 mb-7 hover:bg-green-700 transition-colors">
-        <Link to="/">Login</Link>
+        <Link to="/">Iniciar Sesión</Link>
       </button>
 
       <div className="text-app-boulder text-center text-sm">
-        Didn’t receive the email?
+        ¿No recibiste el correo electrónico?
         <Link
-          to="recuperacion-password/:slug"
+          to="/recuperacion-password/:slug"
           className="text-app-green text-sm px-1"
         >
-          Resend
+          reenviar
         </Link>
       </div>
     </div>

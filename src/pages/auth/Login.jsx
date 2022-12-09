@@ -36,7 +36,7 @@ export const Login = () => {
       return;
     }
 
-    console.log("Toda la funcionalidad de login");
+    console.log("Toda la funcionalidad de inicio de sesión");
   };
 
   return (
@@ -49,24 +49,22 @@ export const Login = () => {
       />
 
       <form onSubmit={handleSubmit} className="flex flex-col">
-        <label className="text-sm font-bold mb-1 mt-10">Email address</label>
-        <div className="relative mb-6">
+        <div className="relative mb-6 mt-10">
           <RiMailLine className="absolute left-2 top-1/2 -translate-y-1/2 text-gray-500" />
           <input
             type="email"
             className="bg-app-alabaster w-full rounded-lg py-2 px-8 outline-none border border-gray-200"
-            placeholder="username@gmail.com"
+            placeholder="Correo electrónico"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
         </div>
-        <label className="text-sm font-bold mb-1">Password</label>
         <div className="relative mb-6">
           <RiLockLine className="absolute left-2 top-1/2 -translate-y-1/2 text-gray-500" />
           <input
             type={showPassword ? "text" : "password"}
             className="bg-app-alabaster w-full rounded-lg py-2 px-8 outline-none border border-gray-200"
-            placeholder="************"
+            placeholder="Contraseña"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
@@ -85,16 +83,16 @@ export const Login = () => {
         <div>
           {/* <button className="bg-app-green text-white w-full rounded-lg py-2 my-7 hover:scale-105 transition-all"> */}
           <button className="bg-app-green text-white w-full rounded-lg py-4 my-4 hover:bg-green-700 transition-colors font-bold">
-            <Link to="registro">Log in</Link>
+            <Link to="/">Iniciar Sesión</Link>
           </button>
         </div>
       </form>
       <div className="text-app-green text-center text-sm mb-24">
-        <Link to="recuperacion-password/:slug">Forgot my password</Link>
+        <Link to="recuperacion-password/:slug">¿Olvidastes tu contraseña?</Link>
       </div>
       <div>
         <button className=" text-app-green w-full rounded-lg py-4 hover:bg-green-700 hover:text-app-white transition-colors outline-none border border-app-green font-bold">
-          <Link to="registro">Sign up</Link>
+          <Link to="/registro">Regístrate</Link>
         </button>
       </div>
     </div>
