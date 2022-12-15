@@ -30,6 +30,4 @@ npm run dev
 
 ## 📱 En movil
 
-[![Captura-de-pantalla-2022-12-09-123254.jpg](https://i.postimg.cc/FsHH7Qd6/Captura-de-pantalla-2022-12-09-123254.jpg)](https://postimg.cc/HjFghRt0)
-
 <img src="https://i.postimg.cc/FsHH7Qd6/Captura-de-pantalla-2022-12-09-123254.jpg" width="386">

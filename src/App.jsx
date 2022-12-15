@@ -5,11 +5,11 @@ import { AuthLayout } from "./layouts/auth/AuthLayout";
 // Pages
 import { Error404 } from "./pages/404";
 import { ChangePassword } from "./pages/auth/ChangePassword";
+import { CreateAccount } from "./pages/auth/CreateAccount";
 import { EditAccount } from "./pages/auth/EditAccount";
 import { Login } from "./pages/auth/Login";
 import { RecoveryPassword } from "./pages/auth/RecoveryPassword";
 import { RecoveryPasswordEmail } from "./pages/auth/RecoveryPasswordEmail";
-import { Register } from "./pages/auth/Register";
 import { SaveAccount } from "./pages/auth/SaveAccount";
 
 export const App = () => {
@@ -18,7 +18,7 @@ export const App = () => {
       <Routes>
         <Route path="/" element={<AuthLayout />}>
           <Route index element={<Login />} />
-          <Route path="registro" element={<Register />} />
+          <Route path="crear-cuenta" element={<CreateAccount />} />
           <Route
             path="recuperacion-password/:slug"
             element={<RecoveryPassword />}

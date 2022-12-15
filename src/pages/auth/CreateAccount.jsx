@@ -9,7 +9,7 @@ import {
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
 
-export const Register = () => {
+export const CreateAccount = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [name, setName] = useState("");
   const [lastname, setLastname] = useState("");
