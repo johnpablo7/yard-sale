@@ -3,7 +3,7 @@ import { RiEyeLine, RiEyeOffLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
 
-export const SaveAccount = () => {
+export const MyAccountEdit = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -43,7 +43,7 @@ export const SaveAccount = () => {
           <input
             type="email"
             className="bg-app-alabaster w-full rounded-lg py-2 px-2 outline-none border border-gray-200"
-            placeholder="username"
+            placeholder=""
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
@@ -53,7 +53,7 @@ export const SaveAccount = () => {
           <input
             type="email"
             className="bg-app-alabaster w-full rounded-lg py-2 px-2 outline-none border border-gray-200"
-            placeholder="username@gmail.com"
+            placeholder=""
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
@@ -80,8 +80,8 @@ export const SaveAccount = () => {
           )}
         </div>
         <div>
-          <button className="bg-app-green text-white w-full rounded-lg py-4 mt-36 hover:bg-green-700 transition-colors font-bold">
-            <Link to="/registro">Save</Link>
+          <button className="bg-app-green text-white w-full rounded-lg py-4 mt-28 md:mt-6 hover:bg-green-700 transition-colors font-bold">
+            <Link to="/registro">Edit</Link>
           </button>
         </div>
       </form>

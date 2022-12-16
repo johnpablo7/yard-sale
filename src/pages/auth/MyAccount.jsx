@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export const EditAccount = () => {
+export const MyAccount = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -30,12 +30,12 @@ export const EditAccount = () => {
             ************
           </p>
         </div>
-        <div>
-          <button className=" text-app-green w-full rounded-lg mt-36 py-4 hover:bg-green-700 hover:text-app-white transition-colors outline-none border border-app-green font-bold">
-            <Link to="/registro">Edit</Link>
-          </button>
-        </div>
       </form>
+      <div>
+        <button className=" text-app-green w-full rounded-lg mt-28 md:mt-6 py-4 hover:bg-green-700 hover:text-app-white transition-colors outline-none border border-app-green font-bold">
+          <Link to="/registro">Edit</Link>
+        </button>
+      </div>
     </div>
   );
 };

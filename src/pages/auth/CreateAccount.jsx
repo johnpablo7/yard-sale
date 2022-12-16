@@ -52,7 +52,7 @@ export const CreateAccount = () => {
   return (
     // Aqui va un p-5 que lo tiene el AuthLayout para todos los formularios o paginas.
     <div className="md:w-96 w-full">
-      <form onSubmit={handleSubmit} className="flex flex-col mt-10">
+      <form onSubmit={handleSubmit} className="flex flex-col mt-16">
         <label className="text-lg font-bold mb-11">My account</label>
 
         <div className="relative mb-6">
@@ -60,7 +60,7 @@ export const CreateAccount = () => {
           <input
             type="text"
             className="bg-app-alabaster w-full rounded-lg py-2 px-8 outline-none border border-gray-200"
-            placeholder="Nombre(s)"
+            placeholder="First Name *"
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
@@ -71,7 +71,7 @@ export const CreateAccount = () => {
           <input
             type="text"
             className="bg-app-alabaster w-full rounded-lg py-2 px-8 outline-none border border-gray-200"
-            placeholder="Apellidos"
+            placeholder="Last Name *"
             value={lastname}
             onChange={(e) => setLastname(e.target.value)}
           />
@@ -83,7 +83,7 @@ export const CreateAccount = () => {
           <input
             type="email"
             className="bg-app-alabaster w-full rounded-lg py-2 px-8 outline-none border border-gray-200"
-            placeholder="Correo electrónico"
+            placeholder="E-mail *"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
@@ -94,7 +94,7 @@ export const CreateAccount = () => {
           <input
             type={showPassword ? "text" : "password"}
             className="bg-app-alabaster w-full rounded-lg py-2 px-8 outline-none border border-gray-200"
-            placeholder="Contraseña"
+            placeholder="Password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
@@ -116,7 +116,7 @@ export const CreateAccount = () => {
           <input
             type={showPassword ? "text" : "password"}
             className="bg-app-alabaster w-full rounded-lg py-2 px-8 outline-none border border-gray-200"
-            placeholder="Confirmar contraseña"
+            placeholder="Confirmar password"
             value={password}
             onChange={(e) => setConfirmPassword(e.target.value)}
           />

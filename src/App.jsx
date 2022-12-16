@@ -6,11 +6,11 @@ import { AuthLayout } from "./layouts/auth/AuthLayout";
 import { Error404 } from "./pages/404";
 import { ChangePassword } from "./pages/auth/ChangePassword";
 import { CreateAccount } from "./pages/auth/CreateAccount";
-import { EditAccount } from "./pages/auth/EditAccount";
 import { Login } from "./pages/auth/Login";
+import { MyAccount } from "./pages/auth/MyAccount";
+import { MyAccountEdit } from "./pages/auth/MyAccountEdit";
 import { RecoveryPassword } from "./pages/auth/RecoveryPassword";
 import { RecoveryPasswordEmail } from "./pages/auth/RecoveryPasswordEmail";
-import { SaveAccount } from "./pages/auth/SaveAccount";
 
 export const App = () => {
   return (
@@ -31,8 +31,8 @@ export const App = () => {
             path="restablecer-password/:token"
             element={<ChangePassword />}
           />
-          <Route path="editar-cuenta" element={<EditAccount />} />
-          <Route path="guardar-cuenta" element={<SaveAccount />} />
+          <Route path="mi-cuenta" element={<MyAccount />} />
+          <Route path="mi-cuenta-editar" element={<MyAccountEdit />} />
         </Route>
         <Route path="*" element={<Error404 />} />
       </Routes>
