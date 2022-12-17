@@ -4,7 +4,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { toast } from "react-toastify";
 import logoYard from "../../../public/assets/logos/logo_yard_sale.svg";
 
-export const ChangePassword = () => {
+export const NewPassword = () => {
   const [showPasswordFirst, setShowPasswordFirst] = useState(false);
   const [showPasswordSecond, setShowPasswordSecond] = useState(false);
   const [passwordFirst, setPasswordFirst] = useState("");
@@ -70,19 +70,20 @@ export const ChangePassword = () => {
         className="mx-auto w-36 lg:hidden"
       />
       <h1 className="text-lg font-bold text-center mt-16">
-        Crear una nueva contraseña
+        Create a new password
       </h1>
-      <p className="text-lg text-app-boulder leading-5 mt-2 mb-10">
-        Introduce una nueva contraseña para tu cuenta
+      <p className="text-lg text-app-boulder leading-5 mt-2 mb-10 text-center mx-auto">
+        Enter a new password for your account
       </p>
 
       <form onSubmit={handleSubmit} className="flex flex-col">
+        <label className="text-sm font-bold mb-1">Password</label>
         <div className="relative mb-6">
           <RiLockLine className="absolute left-2 top-1/2 -translate-y-1/2 text-gray-500" />
           <input
             type={showPasswordFirst ? "text" : "password"}
             className="bg-app-alabaster w-full rounded-lg py-2 px-8 outline-none border border-gray-200"
-            placeholder="Contaseña"
+            placeholder="************"
             value={passwordFirst}
             onChange={(e) => setPasswordFirst(e.target.value)}
           />
@@ -100,12 +101,13 @@ export const ChangePassword = () => {
           )}
         </div>
 
+        <label className="text-sm font-bold mb-1">Re-enter password</label>
         <div className="relative mb-6">
           <RiLockLine className="absolute left-2 top-1/2 -translate-y-1/2 text-gray-500" />
           <input
             type={showPasswordSecond ? "text" : "password"}
             className="bg-app-alabaster w-full rounded-lg py-2 px-8 outline-none border border-gray-200"
-            placeholder="Confirmar contraseña"
+            placeholder="************"
             value={passwordSecond}
             onChange={(e) => setPasswordSecond(e.target.value)}
           />
@@ -123,7 +125,7 @@ export const ChangePassword = () => {
         </div>
         <div>
           <button className="bg-app-green text-white w-full rounded-lg py-4 mt-2 hover:bg-green-800 transition-colors">
-            Confirmar nueva contraseña
+            Confirm
           </button>
         </div>
       </form>

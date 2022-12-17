@@ -23,14 +23,14 @@ export const Login = () => {
     // console.log(password, email);
 
     if ([password, email].includes("")) {
-      toast.error("Todos los campos son obligatorios", {
+      toast.error("Invalid user ID and password combination ", {
         theme: "dark",
       });
       return;
     }
 
     if (password.length < 6) {
-      toast.warning("El password debe contener al menos 6 caracteres", {
+      toast.warning("The password must contain at least 6 characters", {
         theme: "dark",
       });
       return;
@@ -47,24 +47,25 @@ export const Login = () => {
         alt="logo_yard_sale"
         className="mx-auto w-52 lg:hidden mt-24"
       />
-
       <form onSubmit={handleSubmit} className="flex flex-col">
-        <div className="relative mb-6 mt-10">
+        <label className="text-sm font-bold mb-1">Email address</label>
+        <div className="relative mb-6">
           <RiMailLine className="absolute left-2 top-1/2 -translate-y-1/2 text-gray-500" />
           <input
             type="email"
             className="bg-app-alabaster w-full rounded-lg py-2 px-8 outline-none border border-gray-200"
-            placeholder="Correo electrónico"
+            placeholder="camilayokoo@gmail.com"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
         </div>
+        <label className="text-sm font-bold mb-1">Password</label>
         <div className="relative mb-6">
           <RiLockLine className="absolute left-2 top-1/2 -translate-y-1/2 text-gray-500" />
           <input
             type={showPassword ? "text" : "password"}
             className="bg-app-alabaster w-full rounded-lg py-2 px-8 outline-none border border-gray-200"
-            placeholder="Contraseña"
+            placeholder="************"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
@@ -83,16 +84,16 @@ export const Login = () => {
         <div>
           {/* <button className="bg-app-green text-white w-full rounded-lg py-2 my-7 hover:scale-105 transition-all"> */}
           <button className="bg-app-green text-white w-full rounded-lg py-4 my-4 hover:bg-green-700 transition-colors font-bold">
-            <Link to="/">Iniciar Sesión</Link>
+            <Link to="/">Log in</Link>
           </button>
         </div>
       </form>
       <div className="text-app-green text-center text-sm mb-24">
-        <Link to="recuperacion-password/:slug">¿Olvidastes tu contraseña?</Link>
+        <Link to="recuperacion-password/:slug">Forgot my password?</Link>
       </div>
       <div>
         <button className=" text-app-green w-full rounded-lg py-4 hover:bg-green-700 hover:text-app-white transition-colors outline-none border border-app-green font-bold">
-          <Link to="/registro">Regístrate</Link>
+          <Link to="/registro">Sign up</Link>
         </button>
       </div>
     </div>

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
 import logoYard from "../../../public/assets/logos/logo_yard_sale.svg";
 
-export const RecoveryPassword = () => {
+export const PasswordRecoveryOne = () => {
   const [email, setEmail] = useState("");
 
   const handleSubmit = (e) => {
@@ -35,36 +35,34 @@ export const RecoveryPassword = () => {
         alt="logo_yard_sale"
         className="mx-auto w-36 lg:hidden"
       />
-      <h1 className="text-lg font-bold text-center mt-20">
-        ¿Tienes problemas para iniciar sesión?
-      </h1>
-      <p className="text-lg text-app-boulder leading-5 mt-2 text-center mb-6">
-        Ingresa tu correo electrónico, teléfono o nopmbre de usuario y te
-        enviaremos un enlace para que recuperes el acceso a tu cuenta.
-      </p>
+      <h1 className="text-lg font-bold text-center mt-20">Password recovery</h1>
+      <div className="flex items-center justify-items-center mx-auto md:w-[270px]">
+        <p className="text-lg text-app-boulder leading-5 mt-2 text-center">
+          Inform the email address used to create your account
+        </p>
+      </div>
 
       <form onSubmit={handleSubmit} className="flex flex-col">
+        <label className="text-sm font-bold mb-1 mt-4">Email address</label>
         <div className="relative mb-6">
           <RiMailLine className="absolute left-2 top-1/2 -translate-y-1/2 text-gray-500" />
           <input
             type="email"
             className="bg-app-alabaster w-full rounded-lg py-2 px-8 outline-none border border-gray-200"
-            placeholder="Correo electrónico"
+            placeholder="camilayokoo@gmail.com"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
         </div>
         <div>
           <button className="bg-app-green text-white w-full rounded-lg py-4 mb-7 hover:bg-green-700 transition-colors font-bold">
-            <Link to="/recuperacion-password-email/:slug">
-              Enviar enlace de inicio de sesión
-            </Link>
+            <Link to="/recuperacion-password-email/:slug">Submit</Link>
           </button>
         </div>
+        <div className="text-app-green text-center text-sm">
+          <Link to="/">Back to log in</Link>
+        </div>
       </form>
-      <div className="text-app-green text-center text-sm">
-        <Link to="/">Volver al inicio de sesión</Link>
-      </div>
     </div>
   );
 };

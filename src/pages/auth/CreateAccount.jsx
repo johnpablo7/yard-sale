@@ -116,8 +116,8 @@ export const CreateAccount = () => {
           <input
             type={showPassword ? "text" : "password"}
             className="bg-app-alabaster w-full rounded-lg py-2 px-8 outline-none border border-gray-200"
-            placeholder="Confirmar password"
-            value={password}
+            placeholder="Confirm password"
+            value={confirmPassword}
             onChange={(e) => setConfirmPassword(e.target.value)}
           />
           {showPassword ? (
@@ -140,12 +140,12 @@ export const CreateAccount = () => {
       </form>
       <div className="flex items-center justify-between mt-4">
         <div>
-          ¿Ya tienes una cuenta?
+          Do you already have an account?
           <Link
             to="/"
             className="text-green-600 font-medium hover:underline transition-all px-2"
           >
-            Ingresa
+            Log in
           </Link>
         </div>
         <div>
@@ -153,7 +153,7 @@ export const CreateAccount = () => {
             to="/recuperacion-password/:slug"
             className="text-green-600 font-medium hover:underline transition-all px-2"
           >
-            ¿Olvidastes tu password?
+            Forgot your password?
           </Link>
         </div>
       </div>

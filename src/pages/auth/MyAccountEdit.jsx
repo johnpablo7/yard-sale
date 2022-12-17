@@ -5,6 +5,7 @@ import { toast } from "react-toastify";
 
 export const MyAccountEdit = () => {
   const [showPassword, setShowPassword] = useState(false);
+  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -16,7 +17,7 @@ export const MyAccountEdit = () => {
     e.preventDefault();
     // console.log(password, email);
 
-    if ([password, email].includes("")) {
+    if ([password, name, email].includes("")) {
       toast.error("Todos los campos son obligatorios", {
         theme: "dark",
       });
@@ -30,7 +31,7 @@ export const MyAccountEdit = () => {
       return;
     }
 
-    console.log("Toda la funcionalidad de login");
+    console.log("Toda la funcionalidad de mi cuenta editar");
   };
 
   return (
@@ -41,11 +42,11 @@ export const MyAccountEdit = () => {
         <label className="text-sm font-bold mb-1 mt-12">Name</label>
         <div className="relative mb-6">
           <input
-            type="email"
+            type="text"
             className="bg-app-alabaster w-full rounded-lg py-2 px-2 outline-none border border-gray-200"
-            placeholder=""
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            placeholder="Camila Yokoo"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
           />
         </div>
         <label className="text-sm font-bold mb-1">Email address</label>
@@ -53,7 +54,7 @@ export const MyAccountEdit = () => {
           <input
             type="email"
             className="bg-app-alabaster w-full rounded-lg py-2 px-2 outline-none border border-gray-200"
-            placeholder=""
+            placeholder="camilayokoo@gmail.com"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />

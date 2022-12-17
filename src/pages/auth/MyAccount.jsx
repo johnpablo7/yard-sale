@@ -21,7 +21,7 @@ export const MyAccount = () => {
         <label className="text-sm font-bold mb-1">Email address</label>
         <div className="relative mb-6">
           <p className="bg-app-white text-app-boulder w-full py-2">
-            camila_yokoo@gmail.com
+            camilayokoo@gmail.com
           </p>
         </div>
         <label className="text-sm font-bold mb-1">Password</label>
