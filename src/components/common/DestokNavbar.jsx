@@ -1,4 +1,5 @@
 import React from "react";
+import { RiArrowDropDownLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
 import iconNotification from "../../../public/assets/icons/icon_shopping_cart_notification.svg";
 import logoYard from "../../../public/assets/logos/logo_yard_sale.svg";
@@ -51,8 +52,12 @@ export const DestokNavbar = () => {
         </nav>
       </div>
 
-      <div className="flex items-center px-14 gap-x-7 text-app-green text-sm font-bold">
-        <button>Sign in</button>
+      <div className="flex items-center px-14 gap-x-8 text-app-green text-sm">
+        <button className="font-bold">Sign in</button>
+        <div className="flex items-center text-app-boulder">
+          <p className="text-sm text-app-boulder">camilayokoo@gmail.com</p>
+          <RiArrowDropDownLine className="text-2xl translate-y-0.5" />
+        </div>
         <img src={iconNotification} alt="logo_yard_sale" className="" />
       </div>
     </header>
