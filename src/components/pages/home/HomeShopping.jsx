@@ -1,6 +1,6 @@
 import { CardList } from "../../common/CardList";
 import { Search } from "../../common/Search";
-import { ShoppingCart } from "../../common/ShoppingCard";
+import { ShoppingCart } from "../../common/ShoppingCart";
 
 export const HomeShopping = () => {
   return (
