@@ -1,12 +1,12 @@
 import { CardList } from "../../common/CardList";
-import { ProductDetails } from "../../common/ProductDetails";
 import { Search } from "../../common/Search";
+import { ShoppingCart } from "../../common/ShoppingCard";
 
-export const HomeProduct = () => {
+export const HomeShopping = () => {
   return (
     <div className="mt-20">
       <Search />
-      <ProductDetails />
+      <ShoppingCart />
       <CardList />
       <CardList />
     </div>

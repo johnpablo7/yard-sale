@@ -5,7 +5,7 @@ import more from "../../../public/assets/icons/more.svg";
 import shape from "../../../public/assets/icons/shape.svg";
 import fridge from "../../../public/assets/images/fridge.png";
 
-export const ProductDetails = () => {
+export const ShoppingCart = () => {
   return (
     <div className="fixed w-[384px] h-auto rounded drop-shadow top-16 md:right-0 bg-app-white border-app-white outline-none">
       <div className="relative">

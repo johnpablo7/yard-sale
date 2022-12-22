@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Home } from "./components/pages/home/Home";
 import { HomeProduct } from "./components/pages/home/HomeProduct";
+import { HomeShopping } from "./components/pages/home/HomeShopping";
 import { HomeSignin } from "./components/pages/home/HomeSignin";
 // Layouts
 import { AuthLayout } from "./layouts/auth/AuthLayout";
@@ -24,6 +25,7 @@ export const App = () => {
           <Route path="home" element={<Home />} />
           <Route path="home-signin" element={<HomeSignin />} />
           <Route path="home-product" element={<HomeProduct />} />
+          <Route path="home-shopping" element={<HomeShopping />} />
           <Route path="create-account" element={<CreateAccount />} />
           <Route
             path="password-recovery-one"
