@@ -84,6 +84,7 @@ export const CreateAccount = () => {
             type="email"
             className="bg-app-alabaster w-full rounded-lg py-2 px-8 outline-none border border-gray-200"
             placeholder="E-mail *"
+            autoComplete="false"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
@@ -96,6 +97,7 @@ export const CreateAccount = () => {
             className="bg-app-alabaster w-full rounded-lg py-2 px-8 outline-none border border-gray-200"
             placeholder="Password"
             value={password}
+            autoComplete="false"
             onChange={(e) => setPassword(e.target.value)}
           />
           {showPassword ? (
