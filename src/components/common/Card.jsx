@@ -1,14 +1,20 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import { useState } from "react";
 import btAddCart from "../../../public/assets/icons/bt_add_to_cart.svg";
 import image1 from "../../../public/assets/images/image1.png";
 import image2 from "../../../public/assets/images/image2.png";
+import { ProductDetails } from "./ProductDetails";
 
 export const Card = () => {
+  const [show, showDetail] = useState(false);
+
+  const handleShow = () => {
+    showDetail(!show);
+  };
+
   return (
-    <Link>
+    <div>
       <div>
-        <div>
+        <button onClick={handleShow}>
           <img
             src={image1}
             alt="image1"
@@ -16,7 +22,7 @@ export const Card = () => {
             width={350}
             height={350}
           />
-        </div>
+        </button>
         <div className="flex items-center justify-between">
           <div>
             <p className="font-bold">$ 35,00</p>
@@ -27,23 +33,30 @@ export const Card = () => {
           </div>
         </div>
       </div>
-    </Link>
+      {show && <ProductDetails />}
+    </div>
   );
 };
 
 export const CardTwo = () => {
+  const [show, showDetail] = useState(false);
+
+  const handleShow = () => {
+    showDetail(!show);
+  };
+
   return (
-    <Link>
+    <div>
       <div>
-        <div>
+        <button onClick={handleShow}>
           <img
             src={image2}
-            alt="image1"
+            alt="image2"
             className="rounded mt-10 mb-3 mx-auto"
             width={350}
             height={350}
           />
-        </div>
+        </button>
         <div className="flex items-center justify-between">
           <div>
             <p className="font-bold">$ 120,00</p>
@@ -54,6 +67,7 @@ export const CardTwo = () => {
           </div>
         </div>
       </div>
-    </Link>
+      {show && <ProductDetails />}
+    </div>
   );
 };

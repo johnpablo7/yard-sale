@@ -1,5 +1,5 @@
-import { useSetAtom } from "jotai";
 import { Link, useNavigate } from "react-router-dom";
+import { useSetAtom } from "jotai";
 import { authAtom } from "../../store/auth";
 
 export const Menu = () => {
