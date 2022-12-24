@@ -6,7 +6,7 @@ import { HomeProduct } from "./components/pages/home/HomeProduct";
 import { HomeShopping } from "./components/pages/home/HomeShopping";
 import { HomeSignin } from "./components/pages/home/HomeSignin";
 // Layouts
-import { AuthLayout } from "./layouts/auth/AuthLayout";
+import { AuthLayout } from "./layouts/AuthLayout";
 
 // Pages
 import { Error404 } from "./pages/404";
@@ -23,13 +23,14 @@ export const App = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<AuthLayout />}>
+          <Route path="" element={<Home />} />
+          <Route path="product" element={<HomeProduct />} />
+          <Route path="shopping" element={<HomeShopping />} />
+          <Route path="my-order" element={<HomeMyOrder />} />
+          <Route path="my-orders" element={<HomeMyOrders />} />
+
+          <Route path="signin" element={<HomeSignin />} />
           <Route path="login" element={<Login />} />
-          <Route path="home" element={<Home />} />
-          <Route path="home-signin" element={<HomeSignin />} />
-          <Route path="home-product" element={<HomeProduct />} />
-          <Route path="home-shopping" element={<HomeShopping />} />
-          <Route path="home-my-order" element={<HomeMyOrder />} />
-          <Route path="home-my-orders" element={<HomeMyOrders />} />
           <Route path="create-account" element={<CreateAccount />} />
           <Route
             path="password-recovery-one"

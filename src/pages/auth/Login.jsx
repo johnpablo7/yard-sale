@@ -1,15 +1,19 @@
 import { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { useSetAtom } from "jotai";
+import { authAtom } from "../../store/auth";
+import { toast } from "react-toastify";
+import logoYard from "../../../public/assets/logos/logo_yard_sale.svg";
 import {
   RiEyeLine,
   RiEyeOffLine,
   RiLockLine,
   RiMailLine,
 } from "react-icons/ri";
-import { Link } from "react-router-dom";
-import { toast } from "react-toastify";
-import logoYard from "../../../public/assets/logos/logo_yard_sale.svg";
 
 export const Login = () => {
+  const setAuth = useSetAtom(authAtom);
+  const navigate = useNavigate();
   const [showPassword, setShowPassword] = useState(false);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -37,6 +41,9 @@ export const Login = () => {
     }
 
     console.log("Toda la funcionalidad de inicio de sesión");
+
+    setAuth({ email });
+    navigate("/");
   };
 
   return (
@@ -83,8 +90,11 @@ export const Login = () => {
         </div>
         <div>
           {/* <button className="bg-app-green text-white w-full rounded-lg py-2 my-7 hover:scale-105 transition-all"> */}
-          <button className="bg-app-green text-white w-full rounded-lg py-4 my-4 hover:bg-green-700 transition-colors font-bold">
-            <Link to="/">Log in</Link>
+          <button
+            type="submit"
+            className="bg-app-green text-white w-full rounded-lg py-4 my-4 hover:bg-green-700 transition-colors font-bold"
+          >
+            Log in
           </button>
         </div>
       </form>

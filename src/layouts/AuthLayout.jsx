@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import { DestokNavbar } from "../../components/common/DestokNavbar";
+import { DestokNavbar } from "../components/common/DestokNavbar";
 
 export const AuthLayout = () => {
   return (
