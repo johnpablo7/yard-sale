@@ -1,5 +1,5 @@
 import { CardList } from "../../common/CardList";
-import { Search } from "../../common/Search";
+import { Search } from "../../shared/Search";
 
 export const Home = () => {
   return (

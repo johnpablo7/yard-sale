@@ -1,7 +1,7 @@
 import React from "react";
 import flechita from "../../../../assets/icons/flechita.svg";
 
-export const HomeMyOrders = () => {
+export const Orders = () => {
   return (
     <div className="w-[405px] h-auto">
       <p className="text-lg font-bold mb-12">My order</p>

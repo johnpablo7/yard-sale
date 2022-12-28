@@ -2,7 +2,7 @@ import { useState } from "react";
 import { RiMailLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
-import logoYard from "../../../assets/logos/logo_yard_sale.svg";
+import logoYard from "../../../../assets/logos/logo_yard_sale.svg";
 
 export const PasswordRecoveryOne = () => {
   const [email, setEmail] = useState("");
@@ -56,7 +56,7 @@ export const PasswordRecoveryOne = () => {
         </div>
         <div>
           <button className="bg-app-green text-white w-full rounded-lg py-4 mb-7 hover:bg-green-700 transition-colors font-bold">
-            <Link to="/recuperacion-password-email/:slug">Submit</Link>
+            <Link to="/">Submit</Link>
           </button>
         </div>
         <div className="text-app-green text-center text-sm">

@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useSetAtom } from "jotai";
-import { authAtom } from "../../store/auth";
+import { authAtom } from "../../../store/auth";
 import { toast } from "react-toastify";
-import logoYard from "../../../assets/logos/logo_yard_sale.svg";
+import logoYard from "../../../../assets/logos/logo_yard_sale.svg";
 import {
   RiEyeLine,
   RiEyeOffLine,

@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 import { useAtom, useAtomValue } from "jotai";
 import { authAtom } from "../../store/auth";
-import { NavUser } from "../shared/NavUser";
+import { NavUser } from "./NavUser";
 import iconNotification from "../../../assets/icons/icon_shopping_cart_notification.svg";
 import logoYard from "../../../assets/logos/logo_yard_sale.svg";
-import { ShoppingCart } from "./ShoppingCart";
+import { ShoppingCart } from "../common/ShoppingCart";
 import { cartWidgetAtom } from "../../store/cart";
 
-export const DestokNavbar = () => {
+export const Navbar = () => {
   const auth = useAtomValue(authAtom);
   const [cartWidget, setCartWidget] = useAtom(cartWidgetAtom);
 

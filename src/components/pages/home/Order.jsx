@@ -1,7 +1,7 @@
 import React from "react";
 import image1 from "../../../../assets/images/image1.png";
 
-export const HomeMyOrder = () => {
+export const Order = () => {
   return (
     <div className="w-[405px] h-auto">
       <p className="text-lg font-bold mb-12">My order</p>
