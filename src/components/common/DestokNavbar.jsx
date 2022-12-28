@@ -58,11 +58,11 @@ export const DestokNavbar = () => {
         </nav>
       </div>
 
-      <div className="flex items-center px-14 gap-x-8 text-app-green text-sm">
+      <div className="flex items-center px-14 gap-x-8">
         {auth ? (
           <NavUser />
         ) : (
-          <Link to="/login" className="font-bold">
+          <Link to="/login" className="font-bold text-app-green text-sm">
             Sign in
           </Link>
         )}

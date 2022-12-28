@@ -1,15 +1,21 @@
-import React from "react";
 import { Link } from "react-router-dom";
+import { useSetAtom } from "jotai";
+import { productWidgetAtom } from "../../store/product";
 import close from "../../../assets/icons/icon_close.svg";
 import more from "../../../assets/icons/more.svg";
 import shape from "../../../assets/icons/shape.svg";
 import fridge from "../../../assets/images/fridge.png";
 
 export const ProductDetails = () => {
+  const setProductWidget = useSetAtom(productWidgetAtom);
+
   return (
-    <div className="fixed w-[384px] h-auto rounded drop-shadow top-16 md:right-0 bg-app-white border-app-white outline-none">
+    <div className="fixed w-[384px] h-auto rounded top-16 md:right-0 bg-app-white border-app-white outline-none">
       <div className="relative">
-        <button className="absolute bg-app-white text-3xl rounded-full p-3 left-4 top-6">
+        <button
+          onClick={() => setProductWidget(false)}
+          className="absolute bg-app-white text-3xl rounded-full p-3 left-4 top-6"
+        >
           <img src={close} alt="close" />
         </button>
         <img src={fridge} alt="fridge" />

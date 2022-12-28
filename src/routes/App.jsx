@@ -2,8 +2,6 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Home } from "../components/pages/home/Home";
 import { HomeMyOrder } from "../components/pages/home/HomeMyOrder";
 import { HomeMyOrders } from "../components/pages/home/HomeMyOrders";
-import { HomeProduct } from "../components/pages/home/HomeProduct";
-import { HomeShopping } from "../components/pages/home/HomeShopping";
 import { HomeSignin } from "../components/pages/home/HomeSignin";
 // Layouts
 import { AuthLayout } from "../layouts/AuthLayout";
@@ -24,7 +22,6 @@ export const App = () => {
       <Routes>
         <Route path="/" element={<AuthLayout />}>
           <Route path="" element={<Home />} />
-          <Route path="product" element={<HomeProduct />} />
 
           <Route path="my-order" element={<HomeMyOrder />} />
           <Route path="my-orders" element={<HomeMyOrders />} />
