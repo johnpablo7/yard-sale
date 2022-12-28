@@ -2,7 +2,7 @@ import { useState } from "react";
 import { RiEyeLine, RiEyeOffLine, RiLockLine } from "react-icons/ri";
 import { useNavigate, useParams } from "react-router-dom";
 import { toast } from "react-toastify";
-import logoYard from "../../../public/assets/logos/logo_yard_sale.svg";
+import logoYard from "../../../assets/logos/logo_yard_sale.svg";
 
 export const NewPassword = () => {
   const [showPasswordFirst, setShowPasswordFirst] = useState(false);

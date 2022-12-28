@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import close from "../../../public/assets/icons/icon_close.svg";
-import more from "../../../public/assets/icons/more.svg";
-import shape from "../../../public/assets/icons/shape.svg";
-import fridge from "../../../public/assets/images/fridge.png";
+import close from "../../../assets/icons/icon_close.svg";
+import more from "../../../assets/icons/more.svg";
+import shape from "../../../assets/icons/shape.svg";
+import fridge from "../../../assets/images/fridge.png";
 
 export const ProductDetails = () => {
   return (

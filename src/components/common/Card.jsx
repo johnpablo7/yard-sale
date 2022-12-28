@@ -1,7 +1,7 @@
 import { useState } from "react";
-import btAddCart from "../../../public/assets/icons/bt_add_to_cart.svg";
-import image1 from "../../../public/assets/images/image1.png";
-import image2 from "../../../public/assets/images/image2.png";
+import btAddCart from "../../../assets/icons/bt_add_to_cart.svg";
+import image1 from "../../../assets/images/image1.png";
+import image2 from "../../../assets/images/image2.png";
 import { ProductDetails } from "./ProductDetails";
 
 export const Card = () => {

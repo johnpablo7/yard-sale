@@ -1,5 +1,5 @@
 import React from "react";
-import flechita from "../../../../public/assets/icons/flechita.svg";
+import flechita from "../../../../assets/icons/flechita.svg";
 
 export const HomeMyOrders = () => {
   return (

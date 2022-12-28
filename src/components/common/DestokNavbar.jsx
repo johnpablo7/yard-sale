@@ -1,12 +1,15 @@
 import { Link } from "react-router-dom";
-import { useAtomValue } from "jotai";
+import { useAtom, useAtomValue } from "jotai";
 import { authAtom } from "../../store/auth";
 import { NavUser } from "../shared/NavUser";
-import iconNotification from "../../../public/assets/icons/icon_shopping_cart_notification.svg";
-import logoYard from "../../../public/assets/logos/logo_yard_sale.svg";
+import iconNotification from "../../../assets/icons/icon_shopping_cart_notification.svg";
+import logoYard from "../../../assets/logos/logo_yard_sale.svg";
+import { ShoppingCart } from "./ShoppingCart";
+import { cartWidgetAtom } from "../../store/cart";
 
 export const DestokNavbar = () => {
   const auth = useAtomValue(authAtom);
+  const [cartWidget, setCartWidget] = useAtom(cartWidgetAtom);
 
   return (
     <header className="fixed right-0 top-0 w-full bg-app-white flex items-center justify-between p-4 z-40 rounded drop-shadow-md">
@@ -64,11 +67,15 @@ export const DestokNavbar = () => {
           </Link>
         )}
 
-        <img
-          src={iconNotification}
-          alt="logo_yard_sale"
-          className="icon-notification"
-        />
+        <button onClick={() => setCartWidget(!cartWidget)}>
+          <img
+            src={iconNotification}
+            alt="logo_yard_sale"
+            className="icon-notification"
+          />
+        </button>
+
+        {cartWidget && <ShoppingCart />}
       </div>
     </header>
   );

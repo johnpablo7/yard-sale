@@ -1,13 +1,17 @@
 import React from "react";
-import arrowLeft from "../../../public/assets/icons/arrow_left.svg";
-import image1 from "../../../public/assets/images/image1.png";
-import close from "../../../public/assets/icons/icon_close.svg";
+import arrowLeft from "../../../assets/icons/arrow_left.svg";
+import image1 from "../../../assets/images/image1.png";
+import close from "../../../assets/icons/icon_close.svg";
+import { cartWidgetAtom } from "../../store/cart";
+import { useSetAtom } from "jotai";
 
 export const ShoppingCart = () => {
+  const setCartWidget = useSetAtom(cartWidgetAtom);
+
   return (
     <div className="fixed w-[384px] h-auto rounded drop-shadow top-16 md:right-0 bg-app-white border-app-white outline-none py-6 px-4">
       <div className="flex items-center gap-6 pl-2 mb-9">
-        <button className="text-3xl">
+        <button onClick={() => setCartWidget(false)} className="text-3xl">
           <img src={arrowLeft} alt="arrow" />
         </button>
         <p className="text-lg font-bold">Shopping cart</p>

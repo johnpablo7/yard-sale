@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import email from "../../../public/assets/icons/email.svg";
-import logoYard from "../../../public/assets/logos/logo_yard_sale.svg";
+import email from "../../../assets/icons/email.svg";
+import logoYard from "../../../assets/logos/logo_yard_sale.svg";
 
 export const PasswordRecoveryTwo = () => {
   return (

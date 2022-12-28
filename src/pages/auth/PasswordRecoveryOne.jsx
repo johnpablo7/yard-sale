@@ -2,7 +2,7 @@ import { useState } from "react";
 import { RiMailLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
-import logoYard from "../../../public/assets/logos/logo_yard_sale.svg";
+import logoYard from "../../../assets/logos/logo_yard_sale.svg";
 
 export const PasswordRecoveryOne = () => {
   const [email, setEmail] = useState("");
