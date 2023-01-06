@@ -4,6 +4,7 @@ import { authAtom } from "../../store/auth";
 import { NavUser } from "./NavUser";
 import iconNotification from "../../../assets/icons/icon_shopping_cart_notification.svg";
 import logoYard from "../../../assets/logos/logo_yard_sale.svg";
+// import iconMenu from "../../../assets/icons/icon_menu.svg";
 import { ShoppingCart } from "../common/ShoppingCart";
 import { cartWidgetAtom } from "../../store/cart";
 
@@ -77,6 +78,28 @@ export const Navbar = () => {
 
         {cartWidget && <ShoppingCart />}
       </div>
+
+      {/* MOBILE */}
+      {/* <div className="flex items-center">
+        <div className="">
+          <img
+            src={iconMenu}
+            alt="icon-menu"
+            className="mx-auto"
+            // width={144}
+            // height={30}
+          />
+        </div>
+        <div>
+          <img
+            src={logoYard}
+            alt="logo_yard_sale"
+            className="mx-auto"
+            width={96}
+            height={20}
+          />
+        </div>
+      </div> */}
     </header>
   );
 };

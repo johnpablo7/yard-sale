@@ -1,23 +1,18 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 // Layouts
-
-// Pages
-
+import { AuthLayout } from "../layouts/AuthLayout";
+// Desktop Page Views
+import { Home } from "../components/pages/home/Home";
+import { Order } from "../components/pages/home/Order";
+import { Orders } from "../components/pages/home/Orders";
 import { CreateAccount } from "../components/pages/auth/CreateAccount";
-
-import { Login } from "../components/pages/auth/Login";
 import { MyAccount } from "../components/pages/auth/MyAccount";
+import { MyAccountEdit } from "../components/pages/auth/MyAccountEdit";
+import { Login } from "../components/pages/auth/Login";
 import { PasswordRecoveryOne } from "../components/pages/auth/PasswordRecoveryOne";
 import { PasswordRecoveryTwo } from "../components/pages/auth/PasswordRecoveryTwo";
-
-import { Orders } from "../components/pages/home/Orders";
-import { Order } from "../components/pages/home/Order";
-import { Home } from "../components/pages/home/Home";
-import { Error404 } from "../components/pages/404";
-import { AuthLayout } from "../layouts/AuthLayout";
-
-import { MyAccountEdit } from "../components/pages/auth/MyAccountEdit";
 import { NewPassword } from "../components/pages/auth/NewPassword";
+import { Error404 } from "../components/pages/404";
 
 export const App = () => {
   return (
