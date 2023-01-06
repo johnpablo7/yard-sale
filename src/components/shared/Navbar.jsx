@@ -80,7 +80,7 @@ export const Navbar = () => {
       </div>
 
       {/* MOBILE */}
-      {/* <div className="flex items-center">
+      <div className="flex items-center">
         <div className="">
           <img
             src={iconMenu}
@@ -99,7 +99,7 @@ export const Navbar = () => {
             height={20}
           />
         </div>
-      </div> */}
+      </div>
     </header>
   );
 };
