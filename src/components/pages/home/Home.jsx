@@ -1,4 +1,5 @@
 import { CardList } from "../../common/CardList";
+
 import { Search } from "../../shared/Search";
 
 export const Home = () => {
@@ -9,7 +10,7 @@ export const Home = () => {
   // }, [])
 
   return (
-    <div className="mt-20">
+    <div className="md:mt-0 mt-20">
       <Search />
       {/* <CardList products={products} /> */}
       <CardList />

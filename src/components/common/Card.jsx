@@ -43,8 +43,8 @@ export const CardTwo = () => {
           src={image2}
           alt="image2"
           className="rounded mt-10 mb-3 mx-auto"
-          width={350}
-          height={350}
+          width={320}
+          height={320}
         />
       </button>
       <div className="flex items-center justify-between">
