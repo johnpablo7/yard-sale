@@ -11,7 +11,7 @@ import { PasswordRecoveryOne } from "../components/pages/auth/PasswordRecoveryOn
 import { PasswordRecoveryTwo } from "../components/pages/auth/PasswordRecoveryTwo";
 import { NewPassword } from "../components/pages/auth/NewPassword";
 import { Error404 } from "../components/pages/404";
-import { Clothes } from "../components/pages/clothes";
+import { Clothes } from "../components/pages/Clothes";
 import { Electronics } from "../components/pages/Electronics";
 import { Furniture } from "../components/pages/Furniture";
 import { Toys } from "../components/pages/Toys";
