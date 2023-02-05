@@ -18,8 +18,8 @@ export const NavUser = () => {
         onClick={handleToggle}
         className="flex items-center text-app-boulder"
       >
-        <p className="text-sm text-app-boulder">{auth.email}</p>
-        <RiArrowDropDownLine className="text-2xl translate-y-0.5" />
+        <p className="text-base text-app-green">{auth.email}</p>
+        <RiArrowDropDownLine className="text-black md:text-4xl translate-y-0.5" />
       </button>
       {toggle && <Menu />}
     </div>

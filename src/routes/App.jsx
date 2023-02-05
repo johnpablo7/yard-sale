@@ -1,7 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-// Layouts
 import { AuthLayout } from "../layouts/AuthLayout";
-// Desktop Page Views
 import { Home } from "../components/pages/home/Home";
 import { Order } from "../components/pages/home/Order";
 import { Orders } from "../components/pages/home/Orders";
@@ -13,13 +11,17 @@ import { PasswordRecoveryOne } from "../components/pages/auth/PasswordRecoveryOn
 import { PasswordRecoveryTwo } from "../components/pages/auth/PasswordRecoveryTwo";
 import { NewPassword } from "../components/pages/auth/NewPassword";
 import { Error404 } from "../components/pages/404";
+import { Clothes } from "../components/pages/clothes";
+import { Electronics } from "../components/pages/Electronics";
+import { Furniture } from "../components/pages/Furniture";
+import { Toys } from "../components/pages/Toys";
+import { Others } from "../components/pages/Others";
 
 export const App = () => {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<AuthLayout />}>
-          {/* Desktop Page Views */}
           <Route path="" element={<Home />} />
           <Route path="order" element={<Order />} />
           <Route path="orders" element={<Orders />} />
@@ -36,11 +38,12 @@ export const App = () => {
             element={<PasswordRecoveryTwo />}
           />
           <Route path="new-password" element={<NewPassword />} />
-
-          {/* Mobile Page Views */}
+          <Route path="clothes" element={<Clothes />} />
+          <Route path="electronics" element={<Electronics />} />
+          <Route path="furniture" element={<Furniture />} />
+          <Route path="toys" element={<Toys />} />
+          <Route path="others" element={<Others />} />
         </Route>
-
-        {/* Not Found */}
         <Route path="*" element={<Error404 />} />
       </Routes>
     </BrowserRouter>

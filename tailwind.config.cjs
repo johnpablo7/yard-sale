@@ -12,6 +12,7 @@ module.exports = {
           boulder: "#797979",
           alabaster: "#F7F7F7",
           green: "#ACD9B2",
+          zinc: "#fafafa",
         },
       },
 

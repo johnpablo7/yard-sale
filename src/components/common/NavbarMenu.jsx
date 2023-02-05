@@ -1,38 +1,28 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import clsx from "clsx";
+import { NavLink } from "react-router-dom";
+import { views } from "../../data/views";
 
 export const NavbarMenu = () => {
   return (
     <nav>
-      <ul className="flex flex-row items-center gap-x-5">
-        <button className="rounded-xl py-1 px-4 bg-app-white text-app-green font-bold border-app-green border">
-          All
-        </button>
-        <li>
-          <Link to="/" className="text-app-silver">
-            Clothes
-          </Link>
-        </li>
-        <li>
-          <Link to="/" className=" text-app-silver">
-            Electronics
-          </Link>
-        </li>
-        <li>
-          <Link to="/" className="text-app-silver">
-            Furniture
-          </Link>
-        </li>
-        <li>
-          <Link to="/" className="text-app-silver">
-            Toys
-          </Link>
-        </li>
-        <li>
-          <Link to="/" className="text-app-silver">
-            Others
-          </Link>
-        </li>
+      <ul className="flex items-center justify-center md:gap-6 text-xl font-bold text-app-green">
+        {views.map((list) => (
+          <li key={list.id}>
+            <NavLink
+              to={list.path}
+              className={({ isActive }) =>
+                clsx(
+                  "px-2 border",
+                  isActive
+                    ? "transition duration-500 rounded-xl text-app-green border-app-green"
+                    : "dark:text-white border-transparent"
+                )
+              }
+            >
+              {list.link}
+            </NavLink>
+          </li>
+        ))}
       </ul>
     </nav>
   );
