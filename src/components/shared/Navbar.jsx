@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { useAtom, useAtomValue } from "jotai";
 import { authAtom } from "../../store/auth";
 import { NavUser } from "./NavUser";
@@ -15,7 +15,7 @@ export const Navbar = () => {
 
   return (
     <>
-      <header className="fixed right-0 top-0 w-full bg-slate-500 flex items-center justify-between py-4 md:px-5 px-4 z-40 drop-shadow-md">
+      <header className="sticky top-0 inset-x-0 w-full bg-slate-500 flex items-center justify-between py-4 md:px-5 px-4 z-40 drop-shadow-md">
         <div className="md:hidden">
           <img src={iconMenu} alt="icon-menu" className="mx-auto w-8 h-8" />
         </div>
@@ -42,9 +42,9 @@ export const Navbar = () => {
             {auth ? (
               <NavUser />
             ) : (
-              <Link to="/login" className="font-bold text-app-green text-xl">
+              <NavLink to="/login" className="font-bold text-app-green text-xl">
                 Sign in
-              </Link>
+              </NavLink>
             )}
           </div>
 

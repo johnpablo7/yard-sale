@@ -1,6 +1,6 @@
-import { CardList } from "../../common/CardList";
-
 import { Search } from "../../shared/Search";
+import { CardList } from "../../common/CardList";
+import { Banner } from "../../shared/Banner";
 
 export const Home = () => {
   // const [products, setProducts] = useState(null)
@@ -10,7 +10,8 @@ export const Home = () => {
   // }, [])
 
   return (
-    <div className="md:mt-0 mt-20">
+    <div className="flex flex-col items-center justify-center">
+      <Banner />
       <Search />
       {/* <CardList products={products} /> */}
       <CardList />

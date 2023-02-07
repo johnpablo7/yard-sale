@@ -8,7 +8,6 @@ export const MyAccount = () => {
   };
 
   return (
-    // Aqui va un p-5 que lo tiene el AuthLayout para todos los formularios o paginas.
     <div className="md:w-96 w-full">
       <form onSubmit={handleSubmit} className="flex flex-col mt-20">
         <label className="text-lg font-bold">My account</label>
