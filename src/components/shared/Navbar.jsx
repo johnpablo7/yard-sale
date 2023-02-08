@@ -41,7 +41,7 @@ export const Navbar = () => {
           </div>
         </div>
 
-        <div className="flex items-center md:px-14 gap-x-8">
+        <div className="flex items-center lg:px-0 md:px-14 gap-x-8 lg:gap-x-4">
           <div>
             {auth ? (
               <NavUser />
