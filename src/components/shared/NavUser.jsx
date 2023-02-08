@@ -13,13 +13,13 @@ export const NavUser = () => {
   };
 
   return (
-    <div>
+    <div className="hidden md:flex xl:flex lg:hidden">
       <button
         onClick={handleToggle}
         className="flex items-center text-app-boulder"
       >
+        <RiArrowDropDownLine className="text-black md:text-4xl translate-y-0.5 flex-none" />
         <p className="text-base text-app-green">{auth.email}</p>
-        <RiArrowDropDownLine className="text-black md:text-4xl translate-y-0.5" />
       </button>
       {toggle && <Menu />}
     </div>

@@ -1,4 +1,3 @@
-import { Search } from "../../shared/Search";
 import { CardList } from "../../common/CardList";
 import { Banner } from "../../shared/Banner";
 
@@ -10,9 +9,8 @@ export const Home = () => {
   // }, [])
 
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div>
       <Banner />
-      <Search />
       {/* <CardList products={products} /> */}
       <CardList />
     </div>
