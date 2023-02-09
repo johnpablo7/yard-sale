@@ -5,7 +5,7 @@ export const Banner = () => {
   return (
     <div className="relative inline-block overflow-hidden">
       <img src={bannerYard} alt="banner" className="bg-cover bg-center" />
-      <div className="absolute inline-block items-center justify-center top-4 left-6 md:left-6 md:top-2 xl:left-12 xl:top-6 overflow-hidden p-3 lg:p-10 md:p-3 xl:p-20">
+      <div className="absolute inline-block items-center justify-center top-4 left-6 md:left-6 md:top-2 xl:left-12 xl:top-6 overflow-hidden p-0 lg:p-10 md:p-3 xl:p-20">
         <h1 className="text-2xl md:text-2xl lg:text-3xl xl:text-4xl text-gray-800 font-bold mb-4 capitalize">
           the best discounts <br /> for decorating <br /> your home
         </h1>

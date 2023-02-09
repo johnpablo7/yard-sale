@@ -4,7 +4,7 @@ import { authAtom } from "../../store/auth";
 
 export const Menu = () => {
   return (
-    <div className="fixed w-[150px] h-auto rounded drop-shadow top-16 md:right-36 bg-app-white border-app-white border outline-none mt-1">
+    <div className="fixed w-[150px] h-auto rounded drop-shadow top-16 md:right-24 bg-app-white border-app-white border outline-none mt-1">
       <ul className="flex flex-col gap-y-6 text-end p-4 py-6 text-app-black">
         <li>
           <Link to="/" className="font-bold">

@@ -13,7 +13,7 @@ export const NavUser = () => {
   };
 
   return (
-    <div className="hidden md:flex xl:flex lg:hidden">
+    <div className="">
       <button
         onClick={handleToggle}
         className="flex items-center text-app-boulder"

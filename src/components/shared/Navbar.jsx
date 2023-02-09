@@ -16,13 +16,20 @@ export const Navbar = () => {
 
   return (
     <>
-      <header className="sticky top-0 inset-x-0 w-full bg-slate-500 flex flex-row items-center justify-between py-4 md:px-5 px-4 z-40 drop-shadow-md gap-x-4 mx-auto">
+      <header
+        className="sticky top-0 inset-x-0 w-full bg-slate-500 flex flex-row items-center justify-between py-4 md:px-5 px-4 z-40 drop-shadow-md
+       mx-auto"
+      >
         <div className="md:hidden">
-          <img src={iconMenu} alt="icon-menu" className="mx-auto w-8 h-8" />
+          <img
+            src={iconMenu}
+            alt="icon-menu"
+            className="mx-auto w-8 h-8 mr-2"
+          />
         </div>
 
         <div className="flex items-center">
-          <div className="md:px-12 flex-none">
+          <div className="flex-none md:mr-8">
             <NavLink to="/">
               <img
                 src={logoYard}
@@ -41,8 +48,8 @@ export const Navbar = () => {
           </div>
         </div>
 
-        <div className="flex items-center lg:px-0 md:px-14 gap-x-8 lg:gap-x-4">
-          <div>
+        <div className="flex items-center lg:px-0 md:px-8 gap-x-8 lg:gap-x-2">
+          <div className="hidden md:flex xl:flex lg:flex">
             {auth ? (
               <NavUser />
             ) : (
@@ -54,7 +61,7 @@ export const Navbar = () => {
 
           <button
             onClick={() => setCartWidget(!cartWidget)}
-            className="flex flex-col mx-auto flex-none"
+            className="flex flex-col flex-none"
           >
             <img
               src={iconNotification}
