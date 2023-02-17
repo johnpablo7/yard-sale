@@ -37,7 +37,7 @@ export const PasswordRecoveryOne = () => {
       />
       <h1 className="text-lg font-bold text-center mt-20">Password recovery</h1>
       <div className="flex items-center justify-items-center mx-auto md:w-[270px]">
-        <p className="text-lg text-app-boulder leading-5 mt-2 text-center">
+        <p className="text-lg text-boulder leading-5 mt-2 text-center">
           Inform the email address used to create your account
         </p>
       </div>
@@ -48,18 +48,18 @@ export const PasswordRecoveryOne = () => {
           <RiMailLine className="absolute left-2 top-1/2 -translate-y-1/2 text-gray-500" />
           <input
             type="email"
-            className="bg-app-alabaster w-full rounded-lg py-2 px-8 outline-none border border-gray-200"
+            className="bg-alabaster w-full rounded-lg py-2 px-8 outline-none border border-gray-200"
             placeholder="camilayokoo@gmail.com"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
         </div>
         <div>
-          <button className="bg-app-green text-white w-full rounded-lg py-4 mb-7 hover:bg-green-700 transition-colors font-bold">
+          <button className="bg-primary text-white w-full rounded-lg py-4 mb-7 hover:bg-green-700 transition-colors font-bold">
             <Link to="/">Submit</Link>
           </button>
         </div>
-        <div className="text-app-green text-center text-sm">
+        <div className="text-primary text-center text-sm">
           <Link to="/">Back to log in</Link>
         </div>
       </form>

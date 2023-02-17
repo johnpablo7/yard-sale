@@ -53,7 +53,7 @@ export const Navbar = () => {
             {auth ? (
               <NavUser />
             ) : (
-              <NavLink to="/login" className="font-bold text-app-green text-xl">
+              <NavLink to="/login" className="font-bold text-primary text-xl">
                 Sign in
               </NavLink>
             )}

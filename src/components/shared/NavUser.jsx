@@ -14,12 +14,9 @@ export const NavUser = () => {
 
   return (
     <div className="">
-      <button
-        onClick={handleToggle}
-        className="flex items-center text-app-boulder"
-      >
+      <button onClick={handleToggle} className="flex items-center text-boulder">
         <RiArrowDropDownLine className="text-black md:text-4xl translate-y-0.5 flex-none" />
-        <p className="text-base text-app-green">{auth.email}</p>
+        <p className="text-base text-primary">{auth.email}</p>
       </button>
       {toggle && <Menu />}
     </div>

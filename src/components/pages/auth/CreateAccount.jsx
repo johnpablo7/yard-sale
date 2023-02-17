@@ -59,7 +59,7 @@ export const CreateAccount = () => {
           <RiUserLine className="absolute left-2 top-1/2 -translate-y-1/2 text-gray-500" />
           <input
             type="text"
-            className="bg-app-alabaster w-full rounded-lg py-2 px-8 outline-none border border-gray-200"
+            className="bg-alabaster w-full rounded-lg py-2 px-8 outline-none border border-gray-200"
             placeholder="First Name *"
             value={name}
             onChange={(e) => setName(e.target.value)}
@@ -70,7 +70,7 @@ export const CreateAccount = () => {
           <RiUserLine className="absolute left-2 top-1/2 -translate-y-1/2 text-gray-500" />
           <input
             type="text"
-            className="bg-app-alabaster w-full rounded-lg py-2 px-8 outline-none border border-gray-200"
+            className="bg-alabaster w-full rounded-lg py-2 px-8 outline-none border border-gray-200"
             placeholder="Last Name *"
             value={lastname}
             onChange={(e) => setLastname(e.target.value)}
@@ -82,7 +82,7 @@ export const CreateAccount = () => {
 
           <input
             type="email"
-            className="bg-app-alabaster w-full rounded-lg py-2 px-8 outline-none border border-gray-200"
+            className="bg-alabaster w-full rounded-lg py-2 px-8 outline-none border border-gray-200"
             placeholder="E-mail *"
             autoComplete="false"
             value={email}
@@ -94,7 +94,7 @@ export const CreateAccount = () => {
           <RiLockLine className="absolute left-2 top-1/2 -translate-y-1/2 text-gray-500" />
           <input
             type={showPassword ? "text" : "password"}
-            className="bg-app-alabaster w-full rounded-lg py-2 px-8 outline-none border border-gray-200"
+            className="bg-alabaster w-full rounded-lg py-2 px-8 outline-none border border-gray-200"
             placeholder="Password"
             value={password}
             autoComplete="false"
@@ -117,7 +117,7 @@ export const CreateAccount = () => {
           <RiLockLine className="absolute left-2 top-1/2 -translate-y-1/2 text-gray-500" />
           <input
             type={showPassword ? "text" : "password"}
-            className="bg-app-alabaster w-full rounded-lg py-2 px-8 outline-none border border-gray-200"
+            className="bg-alabaster w-full rounded-lg py-2 px-8 outline-none border border-gray-200"
             placeholder="Confirm password"
             value={confirmPassword}
             onChange={(e) => setConfirmPassword(e.target.value)}
@@ -135,7 +135,7 @@ export const CreateAccount = () => {
           )}
         </div>
         <div>
-          <button className="bg-app-green text-white w-full rounded-lg py-4 hover:bg-green-700 transition-colors font-bold">
+          <button className="bg-primary text-white w-full rounded-lg py-4 hover:bg-green-700 transition-colors font-bold">
             <Link to="registro">Create account</Link>
           </button>
         </div>

@@ -60,7 +60,7 @@ export const Login = () => {
             <RiMailLine className="absolute left-2 top-1/2 -translate-y-1/2 text-gray-500" />
             <input
               type="email"
-              className="bg-app-alabaster w-full rounded-lg py-2 px-8 outline-none border border-gray-200"
+              className="bg-alabaster w-full rounded-lg py-2 px-8 outline-none border border-gray-200"
               placeholder="camilayokoo@gmail.com"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
@@ -71,7 +71,7 @@ export const Login = () => {
             <RiLockLine className="absolute left-2 top-1/2 -translate-y-1/2 text-gray-500" />
             <input
               type={showPassword ? "text" : "password"}
-              className="bg-app-alabaster w-full rounded-lg py-2 px-8 outline-none border border-gray-200"
+              className="bg-alabaster w-full rounded-lg py-2 px-8 outline-none border border-gray-200"
               placeholder="************"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
@@ -91,17 +91,17 @@ export const Login = () => {
           <div>
             <button
               type="submit"
-              className="bg-app-green text-white w-full rounded-lg py-4 my-4 hover:bg-green-700 transition-colors font-bold"
+              className="bg-primary text-white w-full rounded-lg py-4 my-4 hover:bg-green-700 transition-colors font-bold"
             >
               Log in
             </button>
           </div>
         </form>
-        <div className="text-app-green text-center text-sm mb-24">
+        <div className="text-primary text-center text-sm mb-24">
           <Link to="recuperacion-password/:slug">Forgot my password?</Link>
         </div>
         <div>
-          <button className=" text-app-green w-full rounded-lg py-4 hover:bg-green-700 hover:text-app-white transition-colors outline-none border border-app-green font-bold">
+          <button className=" text-primary w-full rounded-lg py-4 hover:bg-green-700 hover:text-white transition-colors outline-none border border-primary font-bold">
             <Link to="/registro">Sign up</Link>
           </button>
         </div>

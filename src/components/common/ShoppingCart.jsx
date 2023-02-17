@@ -9,7 +9,7 @@ export const ShoppingCart = () => {
   const setCartWidget = useSetAtom(cartWidgetAtom);
 
   return (
-    <div className="fixed w-[384px] h-auto rounded drop-shadow top-16 md:right-0 bg-app-white border-app-white outline-none py-6 px-4">
+    <div className="fixed w-[384px] h-auto rounded drop-shadow top-16 md:right-0 bg-white border-white outline-none py-6 px-4">
       <div className="flex items-center gap-6 pl-2 mb-9">
         <button onClick={() => setCartWidget(false)} className="text-3xl">
           <img src={arrowLeft} alt="arrow" />
@@ -22,11 +22,11 @@ export const ShoppingCart = () => {
           <div className="flex items-center justify-between text-center gap-x-4">
             <div className="flex items-center gap-5">
               <img src={image1} alt="image1" width={77} height={77} />
-              <p className="text-app-boulder">Round shelf</p>
+              <p className="text-boulder">Round shelf</p>
             </div>
             <div className="flex items-center gap-5">
               <p className="font-bold">$ 120,00</p>
-              <button className="bg-app-white text-3xl">
+              <button className="bg-white text-3xl">
                 <img src={close} alt="close" />
               </button>
             </div>
@@ -34,11 +34,11 @@ export const ShoppingCart = () => {
           <div className="flex items-center justify-between text-center gap-x-4">
             <div className="flex items-center gap-5">
               <img src={image1} alt="image1" width={77} height={77} />
-              <p className="text-app-boulder">Round shelf</p>
+              <p className="text-boulder">Round shelf</p>
             </div>
             <div className="flex items-center gap-5">
               <p className="font-bold">$ 120,00</p>
-              <button className="bg-app-white text-3xl">
+              <button className="bg-white text-3xl">
                 <img src={close} alt="close" />
               </button>
             </div>
@@ -46,11 +46,11 @@ export const ShoppingCart = () => {
           <div className="flex items-center justify-between text-center gap-x-4">
             <div className="flex items-center gap-5">
               <img src={image1} alt="image1" width={77} height={77} />
-              <p className="text-app-boulder">Round shelf</p>
+              <p className="text-boulder">Round shelf</p>
             </div>
             <div className="flex items-center gap-5">
               <p className="font-bold">$ 120,00</p>
-              <button className="bg-app-white text-3xl">
+              <button className="bg-white text-3xl">
                 <img src={close} alt="close" />
               </button>
             </div>
@@ -58,11 +58,11 @@ export const ShoppingCart = () => {
           <div className="flex items-center justify-between text-center gap-x-4">
             <div className="flex items-center gap-5">
               <img src={image1} alt="image1" width={77} height={77} />
-              <p className="text-app-boulder">Round shelf</p>
+              <p className="text-boulder">Round shelf</p>
             </div>
             <div className="flex items-center gap-5">
               <p className="font-bold">$ 120,00</p>
-              <button className="bg-app-white text-3xl">
+              <button className="bg-white text-3xl">
                 <img src={close} alt="close" />
               </button>
             </div>
@@ -70,12 +70,12 @@ export const ShoppingCart = () => {
         </div>
 
         <div className="flex flex-col gap-2 items-center justify-between">
-          <div className="flex items-center justify-between bg-app-alabaster w-full rounded-lg py-6 font-bold p-5">
+          <div className="flex items-center justify-between bg-alabaster w-full rounded-lg py-6 font-bold p-5">
             <p className="text-sm">Total</p>
             <p>$ 560.00</p>
           </div>
 
-          <button className="bg-app-green text-white w-full rounded-lg py-4 hover:bg-green-700 transition-colors font-bold">
+          <button className="bg-primary text-white w-full rounded-lg py-4 hover:bg-green-700 transition-colors font-bold">
             Checkout
           </button>
         </div>

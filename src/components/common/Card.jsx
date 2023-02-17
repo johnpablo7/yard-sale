@@ -22,7 +22,7 @@ export const Card = () => {
       <div className="flex items-center justify-between">
         <div>
           <p className="font-bold">$ 35,00</p>
-          <p className="text-app-boulder text-sm">Round shelf</p>
+          <p className="text-boulder text-sm">Round shelf</p>
         </div>
         <div>
           <img src={btAddCart} alt="btn" />
@@ -50,7 +50,7 @@ export const CardTwo = () => {
       <div className="flex items-center justify-between">
         <div>
           <p className="font-bold">$ 120,00</p>
-          <p className="text-app-boulder text-sm">Retro refrigerator</p>
+          <p className="text-boulder text-sm">Retro refrigerator</p>
         </div>
         <div>
           <img src={btAddCart} alt="btn" />

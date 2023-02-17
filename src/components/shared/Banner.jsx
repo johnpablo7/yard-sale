@@ -15,7 +15,7 @@ export const Banner = () => {
         <button className="xl:mt-12 md:mt-6 hidden md:block">
           <NavLink
             to="/"
-            className="bg-slate-500 border-app-green font-bold text-app-green md:px-4 md:py-2 xl:px-8 xl:py-3 lg:px-4 lg:py-2 rounded-md hover:bg-app-green hover:text-slate-700 transition"
+            className="bg-slate-500 font-bold text-primary md:px-4 md:py-2 xl:px-8 xl:py-3 lg:px-4 lg:py-2 rounded-md hover:bg-transparent hover:border-slate-500 hover:border hover:text-slate-700 transition uppercase"
           >
             Shop Now
           </NavLink>

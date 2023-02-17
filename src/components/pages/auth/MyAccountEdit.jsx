@@ -43,7 +43,7 @@ export const MyAccountEdit = () => {
         <div className="relative mb-6">
           <input
             type="text"
-            className="bg-app-alabaster w-full rounded-lg py-2 px-2 outline-none border border-gray-200"
+            className="bg-alabaster w-full rounded-lg py-2 px-2 outline-none border border-gray-200"
             placeholder="Camila Yokoo"
             value={name}
             onChange={(e) => setName(e.target.value)}
@@ -53,7 +53,7 @@ export const MyAccountEdit = () => {
         <div className="relative mb-6">
           <input
             type="email"
-            className="bg-app-alabaster w-full rounded-lg py-2 px-2 outline-none border border-gray-200"
+            className="bg-alabaster w-full rounded-lg py-2 px-2 outline-none border border-gray-200"
             placeholder="camilayokoo@gmail.com"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -63,7 +63,7 @@ export const MyAccountEdit = () => {
         <div className="relative mb-6">
           <input
             type={showPassword ? "text" : "password"}
-            className="bg-app-alabaster w-full rounded-lg py-2 px-2 outline-none border border-gray-200"
+            className="bg-alabaster w-full rounded-lg py-2 px-2 outline-none border border-gray-200"
             placeholder="************"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
@@ -81,7 +81,7 @@ export const MyAccountEdit = () => {
           )}
         </div>
         <div>
-          <button className="bg-app-green text-white w-full rounded-lg py-4 mt-28 md:mt-6 hover:bg-green-700 transition-colors font-bold">
+          <button className="bg-primary text-white w-full rounded-lg py-4 mt-28 md:mt-6 hover:bg-green-700 transition-colors font-bold">
             <Link to="/registro">Edit</Link>
           </button>
         </div>

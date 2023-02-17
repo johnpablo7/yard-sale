@@ -14,23 +14,23 @@ export const PasswordRecoveryTwo = () => {
       <h1 className="text-lg font-bold text-center mt-20">
         Email has been sent!
       </h1>
-      <p className="text-lg text-app-boulder leading-5 mt-2 text-center">
+      <p className="text-lg text-boulder leading-5 mt-2 text-center">
         Please check your inbox for instructions on how to reset the password
       </p>
 
-      <div className="rounded-full bg-app-alabaster w-40 py-12 my-8">
+      <div className="rounded-full bg-alabaster w-40 py-12 my-8">
         <img src={email} alt="email" className="mx-auto w-24 " />
       </div>
 
-      <button className="bg-app-green text-white w-full rounded-lg py-4 mb-7 hover:bg-green-700 transition-colors">
+      <button className="bg-primary text-white w-full rounded-lg py-4 mb-7 hover:bg-green-700 transition-colors">
         <Link to="/">Login</Link>
       </button>
 
-      <div className="text-app-boulder text-center text-sm">
+      <div className="text-boulder text-center text-sm">
         Didn’t receive the email?
         <Link
           to="/recuperacion-password/:slug"
-          className="text-app-green text-sm px-1"
+          className="text-primary text-sm px-1"
         >
           Resend
         </Link>

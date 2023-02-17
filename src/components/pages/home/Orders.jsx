@@ -10,7 +10,7 @@ export const Orders = () => {
         <div className="flex items-center justify-between w-full font-bold">
           <div className="flex flex-col gap-1">
             <p className="font-bold">04.25.2021</p>
-            <p className="text-app-boulder text-sm font-normal">6 articles</p>
+            <p className="text-boulder text-sm font-normal">6 articles</p>
           </div>
           <div className="flex items-center gap-5">
             <p>$ 120,00</p>
@@ -22,7 +22,7 @@ export const Orders = () => {
         <div className="flex items-center justify-between w-full font-bold">
           <div className="flex flex-col gap-1">
             <p className="font-bold">04.25.2021</p>
-            <p className="text-app-boulder text-sm font-normal">6 articles</p>
+            <p className="text-boulder text-sm font-normal">6 articles</p>
           </div>
           <div className="flex items-center gap-5">
             <p>$ 120,00</p>
@@ -34,7 +34,7 @@ export const Orders = () => {
         <div className="flex items-center justify-between w-full font-bold">
           <div className="flex flex-col gap-1">
             <p className="font-bold">04.25.2021</p>
-            <p className="text-app-boulder text-sm font-normal">6 articles</p>
+            <p className="text-boulder text-sm font-normal">6 articles</p>
           </div>
           <div className="flex items-center gap-5">
             <p>$ 120,00</p>
@@ -46,7 +46,7 @@ export const Orders = () => {
         <div className="flex items-center justify-between w-full font-bold">
           <div className="flex flex-col gap-1">
             <p className="font-bold">04.25.2021</p>
-            <p className="text-app-boulder text-sm font-normal">6 articles</p>
+            <p className="text-boulder text-sm font-normal">6 articles</p>
           </div>
           <div className="flex items-center gap-5">
             <p>$ 120,00</p>
@@ -58,7 +58,7 @@ export const Orders = () => {
         <div className="flex items-center justify-between w-full font-bold">
           <div className="flex flex-col gap-1">
             <p className="font-bold">04.25.2021</p>
-            <p className="text-app-boulder text-sm font-normal">6 articles</p>
+            <p className="text-boulder text-sm font-normal">6 articles</p>
           </div>
           <div className="flex items-center gap-5">
             <p>$ 120,00</p>

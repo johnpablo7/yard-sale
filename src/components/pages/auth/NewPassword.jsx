@@ -72,7 +72,7 @@ export const NewPassword = () => {
       <h1 className="text-lg font-bold text-center mt-16">
         Create a new password
       </h1>
-      <p className="text-lg text-app-boulder leading-5 mt-2 mb-10 text-center mx-auto">
+      <p className="text-lg text-boulder leading-5 mt-2 mb-10 text-center mx-auto">
         Enter a new password for your account
       </p>
 
@@ -82,7 +82,7 @@ export const NewPassword = () => {
           <RiLockLine className="absolute left-2 top-1/2 -translate-y-1/2 text-gray-500" />
           <input
             type={showPasswordFirst ? "text" : "password"}
-            className="bg-app-alabaster w-full rounded-lg py-2 px-8 outline-none border border-gray-200"
+            className="bg-alabaster w-full rounded-lg py-2 px-8 outline-none border border-gray-200"
             placeholder="************"
             value={passwordFirst}
             onChange={(e) => setPasswordFirst(e.target.value)}
@@ -106,7 +106,7 @@ export const NewPassword = () => {
           <RiLockLine className="absolute left-2 top-1/2 -translate-y-1/2 text-gray-500" />
           <input
             type={showPasswordSecond ? "text" : "password"}
-            className="bg-app-alabaster w-full rounded-lg py-2 px-8 outline-none border border-gray-200"
+            className="bg-alabaster w-full rounded-lg py-2 px-8 outline-none border border-gray-200"
             placeholder="************"
             value={passwordSecond}
             onChange={(e) => setPasswordSecond(e.target.value)}
@@ -124,7 +124,7 @@ export const NewPassword = () => {
           )}
         </div>
         <div>
-          <button className="bg-app-green text-white w-full rounded-lg py-4 mt-2 hover:bg-green-800 transition-colors">
+          <button className="bg-primary text-white w-full rounded-lg py-4 mt-2 hover:bg-green-800 transition-colors">
             Confirm
           </button>
         </div>
